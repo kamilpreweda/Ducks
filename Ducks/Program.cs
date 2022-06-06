@@ -8,7 +8,7 @@ namespace Ducks
         {
             foreach (Duck duck in ducks)
             {
-                Console.WriteLine($"{duck.Kind}, {duck.Size} cm");
+                Console.WriteLine(duck);
             }
 
         }
