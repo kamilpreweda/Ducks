@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ducks
 {
-    internal class Duck
+    public class Duck
     {
         public int Size { get; set; }
         public KindOfDuck Kind { get; set; }

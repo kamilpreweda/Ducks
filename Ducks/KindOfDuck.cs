@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ducks
 {
-    internal enum KindOfDuck
+    public enum KindOfDuck
     {
         krzyżówka,
         piżmowa,
