@@ -27,6 +27,18 @@ namespace Ducks
             IComparer<Duck> kindComparer = new DuckComparerByKind();
             ducks.Sort(kindComparer);
             PrintDucks(ducks);
+
+            DuckComparer comparer = new DuckComparer();
+            Console.WriteLine("\nSortowanie według gatunku, potem według wielkości\n");
+            comparer.SortBy = SortCriteria.KindThenSize;
+            ducks.Sort(comparer);
+            PrintDucks(ducks);
+            Console.WriteLine("\nSortowanie według wielkości, potem według gatunku\n");
+            comparer.SortBy = SortCriteria.SizeThenKind;
+            ducks.Sort(comparer);
+            PrintDucks(ducks);
+
+
         }
     } 
 }
