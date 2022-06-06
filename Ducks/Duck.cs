@@ -8,6 +8,11 @@ namespace Ducks
 {
     public class Duck : IComparable<Duck>
     {
+
+        public override string ToString()
+        {
+            return $"{Kind}, {Size} cm";
+        }
         public int Size { get; set; }
         public KindOfDuck Kind { get; set; }
 
