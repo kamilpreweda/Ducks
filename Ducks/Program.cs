@@ -23,6 +23,9 @@ namespace Ducks
                 new Duck() { Kind = KindOfDuck.krzyżówka, Size = 35 },
                 new Duck() { Kind = KindOfDuck.nur, Size = 33 },
             };
+
+            ducks.Sort();
+            PrintDucks(ducks);
         }
     } 
 }
